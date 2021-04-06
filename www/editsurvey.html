@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Edit Survey Page</title>
+  <script src = 'js/jquery-3.4.1.min.js'></script>
+  <script src = 'js/editsurvey.js'></script>
+  <script src = 'js/logout.js'></script>
+  <link rel = "stylesheet" type = "text/css" href = "css/editsurvey-css.css" />
+  <link rel = "stylesheet" href = "css/bootstrap.min.css">
+</head>
+
+<body>
+  <div>
+    <h3>QuestionApp</h3>
+    <h6 id = "userdisp"></h6>
+    <button id = 'logoutlink' onclick='logout()'><span>Logout</span></button>
+    <a href = "individualevent.html">Back</a>
+    <h1 id = "eventdisp"></h1>
+  </div>
+
+  <div class = "content-card">
+    <div class = "container">
+
+      <form class = "input-append">
+        <div id = "survey-field">
+          Question: <br>
+          <input type = "text" id = "quefield"></input>
+        </div>
+      </form>
+
+      <form class = "input-append">
+        <div id = "survey-field">
+          <br> Answers: <br>
+          <input type = "text" id = "field1" name = "answer1"/> <br>
+          <input id='file1' onclick='fileLoad(1)' type='file' /> <br>
+          <input id = "base64-1" type="hidden" /> <br>
+          <img id="imageAnswer1" src="" alt="Image for answer 1" width="100" height="150">
+          <br><br>
+
+          <input type = "text" id = "field2" name = "answer2"/> <br>
+          <input id='file2' onclick='fileLoad(2)' type='file' /> <br>
+          <input id = "base64-2" type="hidden" /> <br>
+          <img id="imageAnswer2" src="" alt="Image for answer 2" width="100" height="150">
+          <br><br>
+
+
+          <input type = "text" id = "field3" name = "answer3"/> <br>
+          <input id='file3' onclick='fileLoad(3)' type='file' /> <br>
+          <input id = "base64-3" type = "hidden" /> <br>
+          <img id="imageAnswer3" src="" alt="Image for answer 3" width="100" height="150">
+          <br><br>
+
+          <input type = "text" id = "field4" name = "answer4"/> <br>
+          <input id='file4' onclick='fileLoad(4)' type='file' /> <br>
+          <input id = "base64-4" type = "hidden" /> <br>
+          <img id="imageAnswer4" src="" alt="Image for answer 4" width="100" height="150">
+          <br><br>
+
+          <input type = "text" id = "field5" name = "answer5"/> <br>
+          <input id='file5' onclick='fileLoad(5)' type='file' /> <br>
+          <input id = "base64-5" type = "hidden" /> <br>
+          <img id="imageAnswer5" src="" alt="Image for answer 5" width="100" height="150">
+          <br><br>
+        </div>
+      </form>
+
+      <div>
+        <br>
+        <!-- Confirm Choices -->
+        <button id = "createsurveybutton" type = "button" class = "event-buttons">Update Survey</button>
+      </div>
+
+      <div>
+        <span id="createdQuestionDisplayMessage"></span> <br>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- popper.js@1.16.0 -->
+  <script src="js/bootstrapjs/popper.min.js"></script>
+  <!-- bootstrap js 4.4.1 -->
+  <script src="js/bootstrapjs/bootstrap.min.js"></script>
+</body>
+
+</html>

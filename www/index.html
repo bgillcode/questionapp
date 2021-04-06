@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src = 'js/jquery-3.4.1.min.js'></script>
+  <script src = 'js/login.js'></script>
+  <link rel = "stylesheet" type = "text/css" href = "css/index-css.css" />
+  <!-- bootstrap 4.4.1 -->
+  <link rel = "stylesheet" href = "css/bootstrap.min.css">
+</head>
+
+<body>
+  <section class = "cover">
+    <div class = "form-card">
+      <div class = "container">
+        <div class = "text-white">
+          <div class = "col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto form p-4 text-center">
+            <h1 class = "display-4 text-center">QuestionApp</h1>
+            <div>
+              <form action = "">
+
+                <div class = "form-group">
+                  <span>Username:</span><br>
+                  <input type='text' id='username' />
+                </div>
+                <div class="form-group">
+                  <span>Password:</span><br>
+                  <input type='password' id='password'/>
+                </div>
+                <div class = "form-group">
+                  <span>Event reference:</span><br>
+                  <input type = 'text' id='eventref'/>
+                </div>
+
+                <button type = 'submit' class = "btn btn-primary btn-lg" id='loginbutton' value='Login'>Login</button>
+
+                <div id = 'feedback'>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- popper.js@1.16.0 -->
+  <script src = "js/bootstrapjs/popper.min.js"></script>
+  <!-- bootstrap js 4.4.1 -->
+  <script src = "js/bootstrapjs/bootstrap.min.js"></script>
+
+</body>
+</html>

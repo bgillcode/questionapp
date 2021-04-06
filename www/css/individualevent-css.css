@@ -1,0 +1,30 @@
+
+h1 {
+	text-align: center;
+	justify-content: center;
+}
+
+body {
+	padding: 10px 20px;
+}
+
+/* Hide all of the buttons for the individualevent page until it's been decided which ones should be displayed using javascript */
+#displayallbuttons {
+	visibility: hidden;
+}
+
+.content-card {
+	/* Add shadows to create the "card" effect */
+	text-align: center;
+	width: 100%;
+	padding: 20px 20%;
+}
+
+.container {
+	padding: 20px 20px;
+}
+
+.event-buttons {
+	width: 300px;
+	max-width: 100%;
+}

@@ -1,0 +1,33 @@
+
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.cover {
+	background-color: grey;
+	margin: auto;
+	display: flex;
+	height: 100%;
+	padding: 10px;
+	align-items: center;
+}
+
+.form-card {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Only used for background overlay, not needed for centering */
+form:before {
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+    border-radius: 10px;
+}

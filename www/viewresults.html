@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Results Page</title>
+  <script src = 'js/jquery-3.4.1.min.js'></script>
+  <script src = 'js/viewresults.js'></script>
+  <script src = 'js/logout.js'></script>
+  <script src = 'chartjs/Chart.min.js'></script>
+  <link rel = "stylesheet" type = "text/css" href = "css/viewresults-css.css" />
+  <link rel = "stylesheet" href = "css/bootstrap.min.css">
+  <link rel = "stylesheet" href = "chartjs/Chart.min.css">
+</head>
+
+<body>
+  <div>
+    <h3>QuestionApp</h3>
+    <h6 id = "userdisp"></h6>
+    <button id = 'logoutlink' onclick='logout()'><span>Logout</span></button>
+    <a href = "individualevent.html">Back</a>
+    <h1 id = "eventdisp"></h1>
+  </div>
+
+  <br><br>
+
+  <div id = "survey-field" style="text-align:center;">
+    <h4> Question: </h4>
+    <span type = "text" id = "quefieldspan" /><br>
+  </div>
+
+  <br><br>
+
+  <div id=resultsforanswers>
+    <h4 style="text-align:center;"> Answers: </h4>
+    <div id="thischartdiv">
+      <canvas id="myChart" style="height:300px"  class="table"></canvas>
+    </div>
+
+    <div id = "textanswers" style="text-align:center;">
+
+      <span type = "text" id="field1" name = "answer1"></span>
+      <span type = "text" id="answertotal1" name = "answertotal1name"></span>
+      <span type = "text" id="answertotalpercentage1" name = "answertotalpercentage1name"></span>
+      <br><br>
+
+      <span type = "text" id = "field2" name = "answer2"></span>
+      <span type = "text" id = "answertotal2" name = "answertotal2name"></span>
+      <span type = "text" id="answertotalpercentage2" name = "answertotalpercentage2name"></span>
+      <br><br>
+
+      <span type = "text" id = "field3" name = "answer3"></span>
+      <span type = "text" id = "answertotal3" name = "answertotal3name"></span>
+      <span type = "text" id="answertotalpercentage3" name = "answertotalpercentage3name"></span>
+      <br><br>
+
+      <span type = "text" id = "field4" name = "answer4"></span>
+      <span type = "text" id = "answertotal4" name = "answertotal4name"></span>
+      <span type = "text" id="answertotalpercentage4" name = "answertotalpercentage4name"></span>
+      <br><br>
+
+      <span type = "text" id = "field5" name = "answer5"></span>
+      <span type = "text" id = "answertotal5" name = "answertotal5name"></span>
+      <span type = "text" id="answertotalpercentage5" name = "answertotalpercentage5name"></span>
+      <br><br>
+
+      <span type = "text" id = "totalnumberofvotescast"></span>
+
+
+    </div>
+
+    <div>
+      <span id="createdQuestionDisplayMessage"></span> <br>
+    </div>
+
+  </div>
+
+
+  <!-- popper.js@1.16.0 -->
+  <script src="js/bootstrapjs/popper.min.js"></script>
+  <!-- bootstrap js 4.4.1 -->
+  <script src="js/bootstrapjs/bootstrap.min.js"></script>
+</body>
+
+</html>

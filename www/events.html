@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src = 'js/jquery-3.4.1.min.js'></script>
+  <script src = 'js/events.js'></script>
+  <script src = 'js/logout.js'></script>
+  <link rel = "stylesheet" type = "text/css" href = "css/events-css.css" />
+  <link rel = "stylesheet" href = "css/bootstrap.min.css">
+</head>
+<body>
+
+  <div>
+    <h1>QuestionApp<h1>
+      <h6 id = 'userdisp'></h6>
+      <button id = 'logoutlink' onclick='logout()'><span>Logout</span></button>
+    </div>
+
+    <div class = "content">
+      <div class = " table-responsive">
+        <table class = "table table-striped table-hover" border = '1'>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+              <th>Location</th>
+              <th>Seminar Question Created?</th>
+              <th>View/Edit Details</th>
+            </tr>
+          </thead>
+          <tbody id = 'eventbody'>
+          </tbody>
+        </table>
+      </div>
+
+      <div id = 'feedback'>
+      </div>
+    </div>
+
+    <!-- popper.js@1.16.0 -->
+    <script src="js/bootstrapjs/popper.min.js"></script>
+    <!-- bootstrap js 4.4.1 -->
+    <script src="js/bootstrapjs/bootstrap.min.js"></script>
+
+  </body>
+  </html>

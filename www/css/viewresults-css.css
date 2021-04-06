@@ -1,0 +1,54 @@
+
+h1 {
+  text-align: center;
+  justify-content: center;
+}
+
+body {
+  padding: 10px 20px;
+}
+
+.content-card {
+  /* Add shadows to create the "card" effect */
+  text-align: left;
+  width: 100%;
+  padding: 20px 20%;
+}
+
+.que-field {
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+}
+
+
+.answer-field {
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.container {
+  position: absolute;
+  left: 40%;
+  padding: 20px 20px;
+}
+
+.event-buttons {
+  width: 300px;
+  max-width: 100%;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 80vw;
+}
+
+#thischartdiv {
+  /* position: responsive; */
+/* left: 0; */
+/* bottom: 0; */
+/* width: 100%; */
+}

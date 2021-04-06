@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Create Survey Page</title>
+  <script src = 'js/jquery-3.4.1.min.js'></script>
+  <script src = 'js/createsurvey.js'></script>
+  <script src = 'js/logout.js'></script>
+  <link rel = "stylesheet" type = "text/css" href = "css/createsurvey-css.css" />
+  <link rel = "stylesheet" href = "css/bootstrap.min.css">
+</head>
+
+<body>
+  <div>
+    <h3>QuestionApp</h3>\
+    <h6 id = "userdisp"></h6>
+    <button id = 'logoutlink' onclick='logout()'><span>Logout</span></button>
+    <a href = "individualevent.html">Back</a>
+    <h1 id = "eventdisp"></h1>
+  </div>
+
+  <div class = "content-card">
+    <div class = "container">
+
+      <form class = "input-append">
+        <div id = "survey-field">
+          <h4> Question: </h4>
+          <input type = "text" id = "quefield" />
+        </div>
+      </form>
+
+      <br>
+
+      <form class = "input-append">
+        <div id = "survey-field">
+          <h4> Answers: </h4>
+          <input class = "answer-field" type = "text" id = "field1" name = "answer1"/>
+          <button class = "btn btn-sm add-field" type = "button" id = "button1"> + </button> <br>
+          <input id='file1' onclick='fileLoad(1)' type='file' /> <br>
+          <input id = "base64-1" type = "hidden" /> <br>
+
+          <!-- <img id="myImg" src="#" alt="your image" height=200 width=100> -->
+        </div>
+      </form>
+
+      <div>
+        <br>
+        <!-- Confirm Choices -->
+        <button id = "createsurveybutton" type = "button" class = "event-buttons">Confirm Survey</button>
+      </div>
+
+      <div>
+        <span id="createdQuestionDisplayMessage"></span> <br>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- popper.js@1.16.0 -->
+  <script src="js/bootstrapjs/popper.min.js"></script>
+  <!-- bootstrap js 4.4.1 -->
+  <script src="js/bootstrapjs/bootstrap.min.js"></script>
+</body>
+
+</html>

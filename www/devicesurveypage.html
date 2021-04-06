@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Display question</title>
+  <script src='js/jquery-3.4.1.min.js'></script>
+  <script src='js/devicesurveypage.js'></script>
+  <script src = 'js/logout.js'></script>
+  <link rel="stylesheet" type="text/css" href="css/devicesurveypage-css.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id='waitingtostart'>
+    <h1>QuestionApp</h1>
+    <div>
+      <div id='titletodisplay'>Device Survey Page - Display question</div>
+    </div>
+
+    <!-- Start of the waiting to start section -->
+    <div id='waitingforquestion'>
+      Standing by for question to be started.
+      Starting at: <span id='timeforquestiontostart'></span>
+    </div>
+
+    <!-- End of waiting to start section -->
+  </div>
+
+  <!--Creates the popup body-->
+  <div class="popup-overlay">
+    <!--Creates the popup content-->
+    <div class="popup-content align-middle">
+      <h1>Thank you for your answer.</h1>
+      <!--popup's close button-->
+      <button class="close"></button> </div>
+    </div>
+
+    <!-- Questions and answers are only displayed if the question has been started (by time or manually started) -->
+    <div id='displayonlyifquestionstarted'>
+      <div class = "form-group">
+        <br>
+        <br>
+        <!-- Question is populated here automatically -->
+        <h1 id='questiontodisplay'></h1><br>
+      </div>
+
+      <div>
+        <!-- Answer buttons are populated here automatically -->
+
+        <div class="container">
+          <div id="displaytheseanswers">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- popper.js@1.16.0 -->
+    <script src="js/bootstrapjs/popper.min.js"></script>
+    <!-- bootstrap js 4.4.1 -->
+    <script src="js/bootstrapjs/bootstrap.min.js"></script>
+  </body>
+
+  </html>

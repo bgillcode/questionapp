@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Individual Event Page</title>
+  <script src = 'js/jquery-3.4.1.min.js'></script>
+  <script src = 'js/individualevent.js'></script>
+  <script src = 'js/logout.js'></script>
+  <link rel = "stylesheet" type = "text/css" href = "css/individualevent-css.css" />
+  <link rel = "stylesheet" href = "css/bootstrap.min.css">
+</head>
+
+<body>
+  <div>
+    <h3>QuestionApp</h3>
+    <h6 id='userdisp'></h6>
+    <button id='logoutlink' onclick='logout()'><span>Logout</span></button>
+    <a href ="events.html">Back</a>
+    <h1 id="eventname"</h1>
+    </div>
+
+    <div class = "content-card">
+      <div class = "container">
+
+        <div> <!-- Display the Location for the event -->
+          Location: <span id = "location"></span> <br>
+          <!-- pull specific info from db based on event -->
+        </div>
+        <div> <!-- Display the Start Time for the event -->
+          Start Time: <span id = "starttime"></span> <br>
+        </div>
+        <div> <!-- Display the End Time for the event -->
+          End Time: <span id = "endtime"></span> <br>
+          <!-- Note that the question and answer will appear if they have been set below, this is just put here for now for testing to see, if they haven't been set they can be hidden later with JavaScript -->
+        </div>
+        <div> <!-- Display the Question for the event -->
+          Question set: <span id = "questionset"></span> <br>
+        </div>
+
+        <div id = "displayallbuttons"> <!-- Survey buttons are within this div -->
+
+          <div>
+            <br>
+            <span id = "eventCheckIfSurveyStarted"></span>
+          </div>
+          <div>
+            <br>
+            <!-- If a question has not been created already, display the Create Survey button -->
+            <button id = "createsurveybutton" type = "button">Create Survey</button>
+            <!-- Otherwise if a question has been created already, display the Edit Survey button -->
+            <button id = "editsurveybutton" type = "button">Edit Survey</button>
+          </div>
+          <div>
+            <!-- both buttons need if statements to make sure the surveys haven't started/finished already to make them usable -->
+            <button id="startsurveybutton" type = "button" onclick = 'startSurveyManually()'>Manually Start Survey</button>
+            <button id="stopsurveybutton" type = "button" onclick = 'stopSurveyManually()'>Manually End Survey</button>
+          </div>
+          <div>
+            <span id="surveyStartedManuallyOrNot"></span> <br>
+          </div>
+          <div>
+            <!-- button to view final results -->
+            <button id="viewresultsbutton" type="button" onclick="window.location.href=viewresults.html" class = "event-buttons">View Results</button>
+          </div>
+          <div>
+            <!-- Click to change into a survey device, with confirmation dialogue added -->
+            <button id="turnintosurveydevicebutton" type="button" onclick='transformIntoSurveyDevice()' class = "event-buttons">TURN INTO A SURVEY DEVICE</button>
+          </div>
+          <!-- End of survey buttons div -->
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- popper.js@1.16.0 -->
+    <script src="js/bootstrapjs/popper.min.js"></script>
+    <!-- bootstrap js 4.4.1 -->
+    <script src="js/bootstrapjs/bootstrap.min.js"></script>
+  </body>
+
+  </html>
